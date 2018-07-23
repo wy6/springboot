@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户页-Springboot入门</title>
+    <link rel="shortcut icon" th:href="@{/imgs/favicon.ico}"/>
+</head>
+<body>
+<div>
+    <input name="userName" placeholder="请输入用户名">用户名</input></br>
+    <input name="password" placeholder="请输入密码" th:type="password">密码</input></br>
+    <input name="age" placeholder="请输入年龄">年龄</input></br>
+    <input name="phone" placeholder="请输入联系方式">联系方式</input></br>
+    <button id="bt_sub">点击添加</button>
+</div>
+<script th:src="@{/js/jquery.min.js}"></script>
+<script type="text/javascript">
+
+    $(function () {
+        $("#bt_sub").click(function () {
+
+            var userName = $('input[name="userName"]').val();
+            var password = $('input[name="password"]').val();
+            var age = $('input[name="age"]').val();
+            var phone = $('input[name="phone"]').val();
+
+            $.ajax({
+                type: "POST",
+                url: "/addUser",
+                data: JSON.stringify({
+                    "reqData": {
+                        "userName": userName,
+                        "password": password,
+                        "age": age,
+                        "phone": phone
+                    }
+                }),
+                contentType: "application/json"
+            });
+        });
+    });
+</script>
+</body>
+</html>
