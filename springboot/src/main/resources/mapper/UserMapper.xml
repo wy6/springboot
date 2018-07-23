@@ -72,4 +72,11 @@
         FROM user
         WHERE user_name = #{userName, jdbcType = VARCHAR}
     </select>
+
+    <select id="queryAllUserByPage" parameterType="Integer" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM user
+    </select>
+
 </mapper>

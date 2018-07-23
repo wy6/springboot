@@ -24,8 +24,6 @@ spring:
     servlet:
       content-type: text/html
     cache: false
-  logging:
-    config: classpath:log4j2.yml
 
 ############################################################
 #
@@ -51,3 +49,7 @@ pagehelper:
   reasonable: true
   support-methods-arguments: true
   params: count,countSql
+
+# 引入日志配置文件
+logging:
+    config: classpath:log4j2.yml

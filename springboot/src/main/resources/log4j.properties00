@@ -1,5 +1,5 @@
 log4j.rootLogger=INFO,console,dailyFile
-# TODO ·¢²¼µ½°¢ÀïÔÆ¼ÇµÃÌí¼Ó£¬ÁíÍâ¿ØÖÆÌ¨²»Êä³ö(Ö»Êä³öwarn»òÕßerrorĞÅÏ¢)
+# TODO å‘å¸ƒåˆ°é˜¿é‡Œäº‘è®°å¾—æ·»åŠ ï¼Œå¦å¤–æ§åˆ¶å°ä¸è¾“å‡º(åªè¾“å‡ºwarnæˆ–è€…errorä¿¡æ¯)
 #INFO,console,dailyFile
 
 log4j.logger.org.mybatis = DEBUG
@@ -10,11 +10,11 @@ log4j.appender.console.encoding=UTF-8
 log4j.appender.console.layout=org.apache.log4j.PatternLayout
 log4j.appender.console.layout.ConversionPattern=%-d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%l] - [%p] %m%n
 
-# ¶¨ÆÚ¹ö¶¯ÈÕÖ¾ÎÄ¼ş£¬Ã¿Ìì¶¼»áÉú³ÉÈÕÖ¾
+# å®šæœŸæ»šåŠ¨æ—¥å¿—æ–‡ä»¶ï¼Œæ¯å¤©éƒ½ä¼šç”Ÿæˆæ—¥å¿—
 log4j.appender.dailyFile=org.apache.log4j.DailyRollingFileAppender
 log4j.appender.dailyFile.encoding=UTF-8
 log4j.appender.dailyFile.Threshold=INFO
-# TODO ±¾µØÈÕÖ¾µØÖ·£¬ÕıÊ½»·¾³ÇëÎñ±ØÇĞ»»Îª°¢ÀïÔÆµØÖ·
+# TODO æœ¬åœ°æ—¥å¿—åœ°å€ï¼Œæ­£å¼ç¯å¢ƒè¯·åŠ¡å¿…åˆ‡æ¢ä¸ºé˜¿é‡Œäº‘åœ°å€
 log4j.appender.dailyFile.File=C:/logs/imooc/log.log4j
 #log4j.appender.dailyFile.File=/imooc/logs/log.log4j
 log4j.appender.dailyFile.DatePattern='.'yyyy-MM-dd

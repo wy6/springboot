@@ -13,4 +13,6 @@ public interface UserMapper {
     void delUser(String id);
 
     List<User> queryUserByName(String userName);
+
+    List<User> queryAllUserByPage(Integer page, Integer pageSize);
 }
