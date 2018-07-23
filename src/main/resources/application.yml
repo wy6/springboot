@@ -8,6 +8,7 @@ spring:
     url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=utf8
     username: root
     password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
     druid:
       initial-size: 1  # 初始化时,建立物理连接的数量
@@ -48,7 +49,7 @@ pagehelper:
   helper-dialect: MYSQL
   reasonable: true
   support-methods-arguments: true
-  params: count,countSql
+  params: count=countSql
 
 # 引入日志配置文件
 logging:
