@@ -102,4 +102,17 @@ public class UserController {
         }
     }
 
+    @PostMapping("/updateById")
+    public BaseResult updateById(@RequestBody BaseRequest<User> baseRequest) {
+        logger.info("*UserController.updateById.107 in, baseRequest[{}].", JSON.toJSONString(baseRequest));
+        User user = baseRequest.getReqData();
+        try {
+            userService.updateById(user);
+            return BaseResult.ok();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return BaseResult.error(ResultCodeEnum.ERROR);
+        }
+    }
+
 }

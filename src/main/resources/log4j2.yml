@@ -41,7 +41,7 @@ Configuration:
       level: info
       AppenderRef:
         - ref: CONSOLE
-        - ref: ROLLING_FILE
+#        - ref: ROLLING_FILE
 #        - ref: EXCEPTION_ROLLING_FILE
 
 #    Logger:  # 单独设置某些包的输出级别

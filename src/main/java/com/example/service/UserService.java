@@ -16,4 +16,6 @@ public interface UserService {
 
     public List<User> queryAllUserByPage(Integer page, Integer pageSize);
 
+    public void updateById(User user);
+
 }

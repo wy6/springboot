@@ -15,4 +15,6 @@ public interface UserMapper {
     List<User> queryUserByName(String userName);
 
     List<User> queryAllUserByPage(Integer page, Integer pageSize);
+
+    void updateById(User user);
 }

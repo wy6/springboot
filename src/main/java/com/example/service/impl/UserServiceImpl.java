@@ -57,4 +57,9 @@ public class UserServiceImpl implements UserService {
         return userMapper.queryAllUserByPage(page, pageSize);
     }
 
+    @Override
+    public void updateById(User user) {
+        userMapper.updateById(user);
+    }
+
 }
