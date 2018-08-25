@@ -42,7 +42,7 @@
             </exclusions>
         </dependency>
 
-        <!-- 引入log4j2日志依赖 -->
+        <!-- 引入 log4j2 日志依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
@@ -115,6 +115,7 @@
             <version>1.2.3</version>
         </dependency>
 
+        <!--druid 数据连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
@@ -127,6 +128,7 @@
             <version>1.1.9</version>
         </dependency>
 
+        <!--mybatis 逆向工程-->
         <dependency>
             <groupId>org.mybatis.generator</groupId>
             <artifactId>mybatis-generator-core</artifactId>
@@ -135,16 +137,42 @@
             <optional>true</optional>
         </dependency>
 
+        <!--json 解析-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.8</version>
         </dependency>
 
+        <!--activiti 工作流-->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-spring-boot-starter-basic</artifactId>
+            <version>6.0.0</version>
+        </dependency>
+
+        <!--IO-->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>5.0.0.Alpha2</version>
+        </dependency>
+
+        <!--Redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-redis</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>springboot</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
         </dependency>
 
     </dependencies>
