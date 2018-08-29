@@ -7,9 +7,11 @@ package com.example.entity;
  * @Modified By：
  */
 
-public class Vacation {
+public class Student {
 
-    private String userName;
+    private String student;
+
+    private String reason;
 
     private String grade;
 
