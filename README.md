@@ -1,7 +1,7 @@
 ### springboot  
 ##### *Simple Demo*  
 ----
-* SpringBoot & MyBatis
+* SpringBoot & MyBatis (*点击查看学习笔记*)
 > SpringMVC  
 > JAVA NIO  
 > Netty  
